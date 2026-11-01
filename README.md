@@ -2,9 +2,9 @@
 
 Name: AIDANA MURATOVA SE-2539
 
-GitHub Repository:https://github.com/muratovaajdana201-ctrl/assignment6webaidan
+GitHub Repository:https://github.com/muratovaajdana201-ctrl/assignment6webaidana
 
-GitHub Pages: 
+GitHub Pages: https://muratovaajdana201-ctrl.github.io/assignment6webaidana/
 
 ## About the Project
 
@@ -39,7 +39,7 @@ I used .css() to change the styles of selected elements and .text() to update th
 
 This task helped me understand how jQuery can select HTML elements and change their appearance and content.
 
-[Screenshot – Task 1](screenshots/01-homepage.png)
+![Homepage](screenshots/01-homepage.png)
 
 ## Part 2: jQuery Effects
 
@@ -67,7 +67,7 @@ I used three jQuery fade methods:
 
 I connected each method to a separate button, so the user can control the gallery.
 
-[Screenshot – Task 3](screenshots/02-about-gallery.png)
+![About and Gallery](screenshots/02-about-gallery.png)
 
 ### Task 4. Slide Effects and Accordion
 
@@ -77,7 +77,7 @@ When I click a heading, the panel opens or closes with a slide animation. I used
 
 I also added a button to open or close all sections at once.
 
-[Screenshot – Task 4](screenshots/03-favorites.png)
+![Favorites](screenshots/03-favorites.png)
 
 ## Part 3: DOM Manipulation and Other jQuery Methods
 
@@ -99,7 +99,7 @@ I used the .attr() method to change the href attribute of the link. I also added
 
 This helped me understand how jQuery can change HTML attributes without editing the HTML directly.
 
-[Screenshot – Tasks 5 and 6](screenshots/04-skills.png)
+![Skills](screenshots/04-skills.png)
 
 ### Task 7. Live Form Preview
 
@@ -109,7 +109,7 @@ I used .val() to get the values entered by the user and .text() to display them 
 
 This task helped me practise working with input fields and handling user input with jQuery.
 
-[Screenshot – Task 7](screenshots/05-contact-form.png)
+![Contact Form](screenshots/05-contact-form.png)
 
 ### Task 8. Animations
 
@@ -119,7 +119,7 @@ I used the .animate() method to change their widths to different values: 90%, 70
 
 This was a good way to practise jQuery animations and see how they can be used to make a website more interactive.
 
-[Screenshot – Task 8](screenshots/06-animation-theme.png)
+![Animation and Theme](screenshots/06-animation-theme.png)
 
 ## What I Learned
 
