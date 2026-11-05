@@ -2,7 +2,7 @@
 $(document).ready(function () {
     console.log("jQuery is ready!");
 
-    // Task 1: Selectors, text, CSS and themes
+    // Task 1
     $("h1").css("letter-spacing", "-.065em");
     $("#greeting").css("transition", "color .2s");
     $(".intro").css("line-height", "1.8");
@@ -20,7 +20,8 @@ $(document).ready(function () {
         $("body").removeClass("light-theme").addClass("dark-theme");
     });
 
-    // Task 2: hide(), show(), toggle()
+
+    // Task 2
     $("#hideStatus").click(function () {
         $("#statusAndFacts").hide();
     });
@@ -33,7 +34,8 @@ $(document).ready(function () {
         $("#statusAndFacts").toggle();
     });
 
-    // Task 3: fadeIn(), fadeOut(), fadeToggle()
+
+    // Task 3
     $("#fadeIn").click(function () {
         $(".gallery-image").fadeIn();
     });
@@ -46,16 +48,17 @@ $(document).ready(function () {
         $(".gallery-image").fadeToggle();
     });
 
-    // Task 4: slideUp(), slideDown(), slideToggle()
+
+    // Task 4
     $(".accordion-title").click(function () {
         var panel = $(this).attr("data-panel");
 
-        if ($(panel).is(":visible")) {
-            $(panel).slideUp();
-            $(this).removeClass("open");
-        } else {
+        if ($(panel).css("display") == "none") {
             $(panel).slideDown();
             $(this).addClass("open");
+        } else {
+            $(panel).slideUp();
+            $(this).removeClass("open");
         }
     });
 
@@ -63,7 +66,8 @@ $(document).ready(function () {
         $(".accordion-content").slideToggle();
     });
 
-    // Task 5: append(), prepend(), remove()
+
+    // Task 5
     $("#addSkill").click(function () {
         var skill = $("#newSkill").val();
 
@@ -97,11 +101,13 @@ $(document).ready(function () {
         }
     });
 
-    // Task 6: attr()
+
+    // Task 6
     $("#changeLink").click(function () {
         $("#socialLink")
             .attr("href", "https://www.linkedin.com/")
             .text("Open LinkedIn");
+
         $("#linkMessage").text("Link changed to LinkedIn.");
     });
 
@@ -109,23 +115,26 @@ $(document).ready(function () {
         $("#socialLink")
             .attr("href", "https://www.instagram.com/aiidkonn/")
             .text("Instagram · @aiidkonn");
+
         $("#linkMessage").text("Link reset to Instagram.");
     });
 
-    // Task 7: val() and text()
-    $("#visitorName, #visitorEmail").on("input", function () {
+
+    // Task 7
+    $("#visitorName, #visitorEmail").keyup(function () {
         $("#nameOutput").text($("#visitorName").val() || "—");
         $("#emailOutput").text($("#visitorEmail").val() || "—");
     });
 
-    // Task 8: animate()
+
+    // Task 8
     var animated = false;
 
     $("#animateSkills").click(function () {
         if (animated === false) {
-            $(".bar-fill").eq(0).animate({ width: "90%" }, 800);
-            $(".bar-fill").eq(1).animate({ width: "70%" }, 800);
-            $(".bar-fill").eq(2).animate({ width: "60%" }, 800);
+            $("#htmlBar").animate({ width: "90%" }, 800);
+            $("#jsBar").animate({ width: "70%" }, 800);
+            $("#jqueryBar").animate({ width: "60%" }, 800);
 
             $("#animationMessage").text("Skill bars animated!");
             $("#animateSkills").text("Reset Skills");
