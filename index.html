@@ -11,6 +11,7 @@
     <!-- Task 0 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
+
 <body>
 
 <header>
@@ -31,7 +32,7 @@
 
 <main class="container">
 
-    <!-- Task 1-->
+    <!-- Task 1 -->
     <section class="hero">
 
         <div class="card">
@@ -55,10 +56,9 @@
             <button id="updateGreeting">Update greeting</button>
         </div>
 
-       
         <div class="card">
             <div class="avatar">
-               <img src="images/my-photo.jpg" alt="My photo">
+                <img src="images/my-photo.jpg" alt="My photo">
             </div>
         </div>
 
@@ -118,21 +118,23 @@
 
             <div class="grid" id="galleryImages">
 
-    <div class="fact gallery-image">
-        <img src="images/space.jpg" alt="Space and the universe">
-        <h3>Astronomy</h3>
-        <p>I'm fascinated by space, stars, and planets.</p>
-    </div>
+                <div class="fact gallery-image">
+                    <img src="images/space.jpg" alt="Space and the universe">
+                    <h3>Astronomy</h3>
+                    <p>
+                        I'm fascinated by space, stars, and planets.
+                    </p>
+                </div>
 
-    <div class="fact gallery-image">
-        <img src="images/piano.jpg" alt="Piano">
-        <h3>Playing the Piano</h3>
-        <p>I enjoy playing the piano and learning new melodies.</p>
-    </div>
+                <div class="fact gallery-image">
+                    <img src="images/piano.jpg" alt="Piano">
+                    <h3>Playing the Piano</h3>
+                    <p>
+                        I enjoy playing the piano and learning new melodies.
+                    </p>
+                </div>
 
-</div>
-
-            
+            </div>
 
             <button id="fadeIn">Fade In</button>
             <button id="fadeOut">Fade Out</button>
@@ -142,7 +144,7 @@
     </section>
 
 
-    <!-- Task 4-->
+    <!-- Task 4 -->
     <section id="favorites">
         <div class="card">
 
@@ -204,9 +206,11 @@
                 <li>jQuery</li>
             </ul>
 
-            <input id="newSkill"
-                   type="text"
-                   placeholder="Enter a skill">
+            <input
+                id="newSkill"
+                type="text"
+                placeholder="Enter a skill"
+            >
 
             <button id="addSkill">Append Skill</button>
             <button id="prependSkill">Prepend Skill</button>
@@ -224,10 +228,12 @@
 
             <h2>Find Me Online</h2>
 
-            <a id="socialLink"
-               href="https://www.instagram.com/aiidkonn/"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                id="socialLink"
+                href="https://www.instagram.com/aiidkonn/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 Instagram · @aiidkonn
             </a>
 
@@ -250,28 +256,37 @@
 
             <form id="contactForm">
 
-    <label for="visitorName">Name</label>
-    <input id="visitorName"
-           type="text"
-           placeholder="Your name">
+                <label for="visitorName">Name</label>
+                <input
+                    id="visitorName"
+                    type="text"
+                    placeholder="Your name"
+                >
 
-    <label for="visitorEmail">Email</label>
-    <input id="visitorEmail"
-           type="email"
-           placeholder="Your email">
+                <label for="visitorEmail">Email</label>
+                <input
+                    id="visitorEmail"
+                    type="email"
+                    placeholder="Your email"
+                >
 
-</form>
+            </form>
 
             <div class="preview">
-                <p>Name: <span id="nameOutput">—</span></p>
-                <p>Email: <span id="emailOutput">—</span></p>
+                <p>
+                    Name: <span id="nameOutput">—</span>
+                </p>
+
+                <p>
+                    Email: <span id="emailOutput">—</span>
+                </p>
             </div>
 
         </div>
     </section>
 
 
-    <!-- Task 8-->
+    <!-- Task 8 -->
     <section id="animation">
         <div class="card">
 
@@ -279,17 +294,17 @@
 
             <p>HTML & CSS — 90%</p>
             <div class="bar">
-                <div class="bar-fill" data-width="90"></div>
+                <div class="bar-fill" id="htmlBar"></div>
             </div>
 
             <p>JavaScript — 70%</p>
             <div class="bar">
-                <div class="bar-fill" data-width="70"></div>
+                <div class="bar-fill" id="jsBar"></div>
             </div>
 
             <p>jQuery — 60%</p>
             <div class="bar">
-                <div class="bar-fill" data-width="60"></div>
+                <div class="bar-fill" id="jqueryBar"></div>
             </div>
 
             <button id="animateSkills">Animate Skills</button>
