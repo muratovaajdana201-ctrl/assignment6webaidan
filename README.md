@@ -1,8 +1,10 @@
+
 # Assignment 6 – My Personal Portfolio
 
-Name: AIDANA MURATOVA SE-2539
+Name: AIDANA MURATOVA  
+Group: SE-2539
 
-GitHub Repository:https://github.com/muratovaajdana201-ctrl/assignment6webaidana
+GitHub Repository: https://github.com/muratovaajdana201-ctrl/assignment6webaidana
 
 GitHub Pages: https://muratovaajdana201-ctrl.github.io/assignment6webaidana/
 
@@ -53,7 +55,7 @@ Each button uses a different jQuery method:
 -.show() makes it visible again.
 -.toggle() changes its visibility.
 
-I used these methods with a small animation duration to make the changes smoother.
+These methods allow the user to hide and show the information by clicking the buttons.
 
 ### Task 3. Fade Effects
 
